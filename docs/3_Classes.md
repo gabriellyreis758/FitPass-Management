@@ -22,6 +22,9 @@ RF01, RF02, RF04
 - tipo
 - valor
 - ativo
+- ativar()
+- desativar()
+- alterarValor()
 
 ***Pagamento***
 RF03, RF04, RF09
@@ -30,31 +33,44 @@ RF03, RF04, RF09
 - valor
 - formaPagamento
 - status
+- registrar()
+- confirmar()
+- cancelar()
 
 ***Acesso***
 RF05, RF09
 - idAcesso
 - dataHora
 - autorizado
-
+- registrar()
+- autorizar()
+- negar()
+- 
 ***Aula***
 RF06, RF07, RF09
 - idAula
 - nome
 - horario
 - capacidadeMaxima
+- disponibilizarHorario()
+- reservarVaga()
+- liberarVaga
+- registrarPresenca()
 
 ***Agendamento***
 RF06, RF10
 - idAgendamento
 - dataReserva
 - status
-
+- confirmar()
+- cancelar()
+- 
 ***Presenca***
 RF07
 - idPresenca
 - data
 - presente
+registrar()
 
 ***AvaliacaoFisica***
 RF08, RF10
@@ -65,7 +81,10 @@ RF08, RF10
 - percentualGordura
 - observacoes
 - anexo
-
+- registrar()
+- atualizarDados()
+- anexarArquivo()
+- 
 ***Notificacao***
 RF10
 - idNotificacao
@@ -73,7 +92,9 @@ RF10
 - dataEnvio
 - status
 - mensagem
-
+- enviar()
+- marcarComolida()
+- 
 ***Instrutor***
 RF07, RF08
 - idInstrutor
